@@ -2,6 +2,8 @@
 
 [TOC]
 
+
+
 ### Advancing Beyond Identification: Multi-bit Watermark for Large Language Models
 
 > https://arxiv.org/abs/2308.00221
@@ -25,7 +27,7 @@
 
     思想很simple，先把每个位置的颜色算出来，统计每种颜色数量；然后用最大概率反推$M_r$中每一位的信息。
 
-    <img src="C:\Users\ply\AppData\Roaming\Typora\typora-user-images\image-20230806120722301.png" alt="image-20230806120722301" style="zoom:43%;" />
+    <img src="./image/image-20230806120722301.png" alt="image-20230806120722301" style="zoom:43%;" />
 
 - 分析
 
@@ -41,13 +43,13 @@
 
     该图对应的参数应为：$r=4, \widetilde{b}=8,b=\frac{\widetilde{b}}{\lfloor log_2r\rfloor}=4$
 
-    文章中写的有误。<img src="C:\Users\ply\AppData\Roaming\Typora\typora-user-images\image-20230806112052278.png" alt="image-20230806112052278" style="zoom:25%;" />
+    文章中写的有误。<img src="./image/image-20230806112052278.png" alt="image-20230806112052278" style="zoom:25%;" />
 
-    ![image-20230806111759308](C:\Users\ply\AppData\Roaming\Typora\typora-user-images\image-20230806111759308.png)
+    ![image-20230806111759308](./image/image-20230806111759308.png)
   
   - issue 3
   
-    <img src="C:\Users\ply\AppData\Roaming\Typora\typora-user-images\image-20230806114409366.png" alt="image-20230806114409366" style="zoom:40%;" />
+    <img src="./image/image-20230806114409366.png" alt="image-20230806114409366" style="zoom:40%;" />
 
 ​			 	第二步应该是$p \leftarrow sample([0,b-1])$
 
